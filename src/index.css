@@ -57,9 +57,15 @@ nav {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
   background: var(--background-primary);
   z-index: 10;
+
+  /* 🔥 scrollbar fix */
+  scrollbar-width: none; /* Firefox */
+}
+
+nav::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
 }
 
 nav div:first-of-type {
@@ -82,6 +88,7 @@ nav input {
   font-size: 0.8rem;
   /* padding: 0.25rem; */
 }
+
 
 h3 {
   padding-top: 1rem;

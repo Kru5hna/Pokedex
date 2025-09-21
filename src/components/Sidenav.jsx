@@ -1,7 +1,7 @@
 import React from 'react'
 import {first151Pokemon, getFullPokedexNumber} from "../utils";
 
-export const Sidenav = () => {
+export default function Sidenav ()  {
 
   return (
     <nav>
