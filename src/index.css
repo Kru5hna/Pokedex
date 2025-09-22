@@ -133,7 +133,7 @@ h3 {
 }
 
 .default-img {
-  width: 240px;
+  width: 340px;
 }
 
 .img-container {
@@ -141,6 +141,8 @@ h3 {
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+  /* width: 400px;
+  height: auto; */
 }
 
 .type-container {
@@ -183,14 +185,22 @@ h3 {
   white-space: nowrap;
 }
 
+.pokemon-move:hover {
+  background: var(--background-muted);
+  border: 1px solid rgb(0, 195, 255); /* ✅ fixed syntax */
+}
+
 .pokemon-move p {
   margin: 0 auto;
 }
 
-
 .pokemon-move {
+  padding: 12px;
   width: 100%;
   flex: 1;
+   transform: translate(0);
+  box-shadow: none;
+  background: var(--background-muted);
 }
 
 .skill-name {
